@@ -1,0 +1,756 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="800"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     style="display: block;" class="colored nvd3-svg"
+     contentStyleType="text/css" height="600"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.0">
+    <style type="text/css" xml:space="preserve">.nvd3 .nv-axis line, .nvd3 .nv-axis path { fill: none; shape-rendering: crispedges; }
+.nv-brush .extent, .nvd3 .background path, .nvd3 .nv-axis line, .nvd3 .nv-axis path { shape-rendering: crispedges; }
+.nv-distx, .nv-disty, .nv-noninteractive, .nvd3 .nv-axis, .nvd3.nv-pie .nv-label, .nvd3.nv-sparklineplus g.nv-hoverValue { pointer-events: none; }
+.nvd3 .nv-axis { opacity: 1; }
+.nvd3 .nv-axis path { stroke: rgb(0, 0, 0); stroke-opacity: 0.75; }
+.nvd3 .nv-axis path.domain { stroke-opacity: 0.75; }
+.nvd3 .nv-axis.nv-x path.domain { stroke-opacity: 0; }
+.nvd3 .nv-axis line { stroke: rgb(229, 229, 229); }
+.nvd3 .nv-axis .zero line, .nvd3 .nv-axis line.zero { stroke-opacity: 0.75; }
+.nvd3 .nv-axis .nv-axisMaxMin text { font-weight: 700; }
+.nvd3 .nv-discretebar .nv-groups rect, .nvd3 .nv-multibar .nv-groups rect, .nvd3 .nv-multibarHorizontal .nv-groups rect { stroke-opacity: 0; transition: fill-opacity 250ms linear 0s; }
+.nvd3 text { font: 400 12px Arial, sans-serif; }
+.nvd3 .nv-legend .nv-series { cursor: pointer; }</style><style type="text/css"
+           xml:space="preserve">.knime-title { color: black; fill: black; font-size: 24px; }
+.knime-label, .knime-axis-label, .knime-tick-label, .knime-label text, text.knime-axis-label, text.knime-tick-label { color: black; fill: black; font-size: 12px; }
+.knime-legend-label, text.knime-legend-label { color: black; fill: black; font-size: 12px; font-weight: normal; }</style><style type="text/css"
+           xml:space="preserve">svg.colored .nvd3 .nv-multibar .nv-groups rect, svg.colored .nvd3 .nv-multibarHorizontal .nv-groups rect, svg.colored .nvd3 .nv-discretebar .nv-groups rect { fill: inherit !important; stroke: inherit !important; }
+rect.nv-bar.positive { cursor: pointer; }</style><text x="20" y="30" id="title"
+          class="knime-title">
+        Kaufverhalten ohne/mit Kinder
+    </text>
+    <g class="nvd3 nv-wrap nv-multiBarWithLegend"
+       transform="translate(62.046875,140)">
+        <g>
+            <g class="nv-x nv-axis nvd3-svg knime-axis knime-x"
+               transform="translate(0,431)">
+                <g class="nvd3 nv-wrap nv-axis knime-axis">
+                    <g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(193.2734375,0)">
+                            <line y2="-431" style="opacity: 1;" x2="0"
+                                  class="knime-tick-line"/>
+                            <text x="0" dy=".71em" y="15"
+                                  style="text-anchor: middle; opacity: 1; pointer-events: all;"
+                                  class="knime-tick-label"
+                                  transform="translate(0,0)">
+                                Keine Kinder
+                                <title class="knime-tooltip">
+                                    Keine Kinder
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(544.6796875,0)">
+                            <line y2="-431" style="opacity: 1;" x2="0"
+                                  class="knime-tick-line"/>
+                            <text x="0" dy=".71em" y="15"
+                                  style="text-anchor: middle; opacity: 1; pointer-events: all;"
+                                  class="knime-tick-label"
+                                  transform="translate(0,0)">
+                                Haben Kinder
+                                <title class="knime-tooltip">
+                                    Haben Kinder
+                                </title>
+                            </text>
+                        </g>
+                        <path class="domain knime-axis-line"
+                              d="M0,0V0H737.953125V0"/>
+                        <text x="368.9765625" y="40"
+                              style="opacity: 1; pointer-events: all;"
+                              class="nv-axislabel knime-axis-label"
+                              text-anchor="middle">
+                            <title class="knime-tooltip"/>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-y nv-axis nvd3-svg knime-axis knime-y">
+                <g class="nvd3 nv-wrap nv-axis knime-axis">
+                    <g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,431)">
+                            <line class="knime-tick-line" y2="0" x2="737.953125"/>
+                            <text x="-3" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label" opacity="0">
+                                0
+                            </text>
+                        </g>
+                        <g class="tick knime-tick" style="opacity: 1;"
+                           transform="translate(0,244.4727224413521)">
+                            <line class="knime-tick-line" y2="0" x2="737.953125"/>
+                            <text x="-3" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label" opacity="1">
+                                500000
+                            </text>
+                        </g>
+                        <g class="tick knime-tick" style="opacity: 1;"
+                           transform="translate(0,57.94544488270421)">
+                            <line class="knime-tick-line" y2="0" x2="737.953125"/>
+                            <text x="-3" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label" opacity="1">
+                                1000000
+                            </text>
+                        </g>
+                        <path class="domain knime-axis-line" d="M0,0H0V431H0"/>
+                        <text x="-215.5" y="-82.046875"
+                              style="text-anchor: middle; pointer-events: all;"
+                              class="nv-axislabel knime-axis-label"
+                              transform="rotate(-90)">
+                            <title class="knime-tooltip"/>
+                        </text>
+                    </g>
+                    <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y knime-axis-max-min"
+                       transform="translate(0,431)">
+                        <text x="-3" dy=".32em" y="0"
+                              style="opacity: 1; pointer-events: all;"
+                              class="knime-tick-label" text-anchor="end">
+                            0
+                        </text>
+                    </g>
+                    <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y knime-axis-max-min"
+                       transform="translate(0,0)">
+                        <text x="-3" dy=".32em" y="0"
+                              style="opacity: 1; pointer-events: all;"
+                              class="knime-tick-label" text-anchor="end">
+                            1155327
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-barsWrap nvd3-svg">
+                <g class="nvd3 nv-wrap nv-multibar" transform="translate(0,0)">
+                    <defs>
+                        <clipPath id="nv-edge-clip-6576">
+                            <rect width="737.953125" height="431"/>
+                        </clipPath>
+                    </defs>
+                    <g clip-path="url(#nv-edge-clip-6576)">
+                        <g class="nv-groups">
+                            <g class="nv-group nv-series-0"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);">
+                                <rect x="0" y="0"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);"
+                                      class="nv-bar positive" height="431"/>
+                                <rect x="0" y="360.8843963657043"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);"
+                                      class="nv-bar positive"
+                                      height="70.11560363429572"/>
+                            </g>
+                            <g class="nv-group nv-series-1"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(174, 199, 232); stroke: rgb(174, 199, 232);">
+                                <rect x="13.750679347826088"
+                                      y="244.82451288682773"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(174, 199, 232); stroke: rgb(174, 199, 232);"
+                                      class="nv-bar positive"
+                                      height="186.17548711317227"/>
+                                <rect x="13.750679347826088"
+                                      y="404.22960512478284"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(174, 199, 232); stroke: rgb(174, 199, 232);"
+                                      class="nv-bar positive"
+                                      height="26.770394875217164"/>
+                            </g>
+                            <g class="nv-group nv-series-2"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 127, 14); stroke: rgb(255, 127, 14);">
+                                <rect x="27.501358695652176"
+                                      y="404.10873544892485"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(255, 127, 14); stroke: rgb(255, 127, 14);"
+                                      class="nv-bar positive"
+                                      height="26.891264551075153"/>
+                                <rect x="27.501358695652176"
+                                      y="426.82365425546186"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(255, 127, 14); stroke: rgb(255, 127, 14);"
+                                      class="nv-bar positive"
+                                      height="4.176345744538139"/>
+                            </g>
+                            <g class="nv-group nv-series-3"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 187, 120); stroke: rgb(255, 187, 120);">
+                                <rect x="41.25203804347826"
+                                      y="309.92439802757144"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(255, 187, 120); stroke: rgb(255, 187, 120);"
+                                      class="nv-bar positive"
+                                      height="121.07560197242856"/>
+                                <rect x="41.25203804347826"
+                                      y="414.2431354932413"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(255, 187, 120); stroke: rgb(255, 187, 120);"
+                                      class="nv-bar positive"
+                                      height="16.75686450675869"/>
+                            </g>
+                            <g class="nv-group nv-series-4"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(44, 160, 44); stroke: rgb(44, 160, 44);">
+                                <rect x="55.00271739130435"
+                                      y="412.1954390402025"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(44, 160, 44); stroke: rgb(44, 160, 44);"
+                                      class="nv-bar positive"
+                                      height="18.804560959797527"/>
+                                <rect x="55.00271739130435"
+                                      y="428.0774906152111"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(44, 160, 44); stroke: rgb(44, 160, 44);"
+                                      class="nv-bar positive"
+                                      height="2.9225093847888957"/>
+                            </g>
+                            <g class="nv-group nv-series-5"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(152, 223, 138); stroke: rgb(152, 223, 138);">
+                                <rect x="68.75339673913044" y="411.595940370129"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(152, 223, 138); stroke: rgb(152, 223, 138);"
+                                      class="nv-bar positive"
+                                      height="19.40405962987103"/>
+                                <rect x="68.75339673913044"
+                                      y="428.08532476086856"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(152, 223, 138); stroke: rgb(152, 223, 138);"
+                                      class="nv-bar positive"
+                                      height="2.9146752391314408"/>
+                            </g>
+                            <g class="nv-group nv-series-6"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(214, 39, 40); stroke: rgb(214, 39, 40);">
+                                <rect x="82.50407608695652"
+                                      y="186.17548711317227"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(214, 39, 40); stroke: rgb(214, 39, 40);"
+                                      class="nv-bar positive"
+                                      height="244.82451288682773"/>
+                                <rect x="82.50407608695652"
+                                      y="387.6547912409214"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(214, 39, 40); stroke: rgb(214, 39, 40);"
+                                      class="nv-bar positive"
+                                      height="43.345208759078616"/>
+                            </g>
+                            <g class="nv-group nv-series-7"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 152, 150); stroke: rgb(255, 152, 150);">
+                                <rect x="96.25475543478261"
+                                      y="214.83055360084202"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(255, 152, 150); stroke: rgb(255, 152, 150);"
+                                      class="nv-bar positive"
+                                      height="216.16944639915798"/>
+                                <rect x="96.25475543478261"
+                                      y="395.2471975466686"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(255, 152, 150); stroke: rgb(255, 152, 150);"
+                                      class="nv-bar positive"
+                                      height="35.75280245333141"/>
+                            </g>
+                            <g class="nv-group nv-series-8"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(148, 103, 189); stroke: rgb(148, 103, 189);">
+                                <rect x="110.0054347826087"
+                                      y="402.3449335123303"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(148, 103, 189); stroke: rgb(148, 103, 189);"
+                                      class="nv-bar positive"
+                                      height="28.65506648766973"/>
+                                <rect x="110.0054347826087"
+                                      y="423.4075936942528"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(148, 103, 189); stroke: rgb(148, 103, 189);"
+                                      class="nv-bar positive"
+                                      height="7.592406305747204"/>
+                            </g>
+                            <g class="nv-group nv-series-9"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(197, 176, 213); stroke: rgb(197, 176, 213);">
+                                <rect x="123.75611413043478"
+                                      y="423.2658329633082"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(197, 176, 213); stroke: rgb(197, 176, 213);"
+                                      class="nv-bar positive"
+                                      height="7.734167036691815"/>
+                                <rect x="123.75611413043478"
+                                      y="428.36399651354117"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(197, 176, 213); stroke: rgb(197, 176, 213);"
+                                      class="nv-bar positive"
+                                      height="2.636003486458833"/>
+                            </g>
+                            <g class="nv-group nv-series-10"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(140, 86, 75); stroke: rgb(140, 86, 75);">
+                                <rect x="137.50679347826087" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(140, 86, 75); stroke: rgb(140, 86, 75);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="137.50679347826087" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(140, 86, 75); stroke: rgb(140, 86, 75);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-11"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(196, 156, 148); stroke: rgb(196, 156, 148);">
+                                <rect x="151.25747282608697" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(196, 156, 148); stroke: rgb(196, 156, 148);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="151.25747282608697" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(196, 156, 148); stroke: rgb(196, 156, 148);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-12"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(227, 119, 194); stroke: rgb(227, 119, 194);">
+                                <rect x="165.00815217391303" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(227, 119, 194); stroke: rgb(227, 119, 194);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="165.00815217391303" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(227, 119, 194); stroke: rgb(227, 119, 194);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-13"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(247, 182, 210); stroke: rgb(247, 182, 210);">
+                                <rect x="178.75883152173913" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(247, 182, 210); stroke: rgb(247, 182, 210);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="178.75883152173913" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(247, 182, 210); stroke: rgb(247, 182, 210);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-14"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(127, 127, 127); stroke: rgb(127, 127, 127);">
+                                <rect x="192.50951086956522" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(127, 127, 127); stroke: rgb(127, 127, 127);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="192.50951086956522" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(127, 127, 127); stroke: rgb(127, 127, 127);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-15"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(199, 199, 199); stroke: rgb(199, 199, 199);">
+                                <rect x="206.2601902173913" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(199, 199, 199); stroke: rgb(199, 199, 199);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="206.2601902173913" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(199, 199, 199); stroke: rgb(199, 199, 199);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-16"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(188, 189, 34); stroke: rgb(188, 189, 34);">
+                                <rect x="220.0108695652174" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(188, 189, 34); stroke: rgb(188, 189, 34);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="220.0108695652174" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(188, 189, 34); stroke: rgb(188, 189, 34);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-17"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(219, 219, 141); stroke: rgb(219, 219, 141);">
+                                <rect x="233.76154891304347" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(219, 219, 141); stroke: rgb(219, 219, 141);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="233.76154891304347" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(219, 219, 141); stroke: rgb(219, 219, 141);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-18"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(23, 190, 207); stroke: rgb(23, 190, 207);">
+                                <rect x="247.51222826086956" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(23, 190, 207); stroke: rgb(23, 190, 207);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="247.51222826086956" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(23, 190, 207); stroke: rgb(23, 190, 207);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-19"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(158, 218, 229); stroke: rgb(158, 218, 229);">
+                                <rect x="261.2629076086956" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(158, 218, 229); stroke: rgb(158, 218, 229);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="261.2629076086956" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(158, 218, 229); stroke: rgb(158, 218, 229);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-20"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);">
+                                <rect x="275.01358695652175" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="275.01358695652175" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-21"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(174, 199, 232); stroke: rgb(174, 199, 232);">
+                                <rect x="288.7642663043478" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(174, 199, 232); stroke: rgb(174, 199, 232);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="288.7642663043478" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(174, 199, 232); stroke: rgb(174, 199, 232);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                            <g class="nv-group nv-series-22"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 127, 14); stroke: rgb(255, 127, 14);">
+                                <rect x="302.51494565217394" y="430"
+                                      transform="translate(35.140625,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(255, 127, 14); stroke: rgb(255, 127, 14);"
+                                      class="nv-bar positive" height="1"/>
+                                <rect x="302.51494565217394" y="430"
+                                      transform="translate(386.546875,0)"
+                                      width="13.750679347826088"
+                                      style="fill: rgb(255, 127, 14); stroke: rgb(255, 127, 14);"
+                                      class="nv-bar positive" height="1"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-legendWrap nvd3-svg knime-legend"
+               transform="translate(0,-140)">
+                <g class="nvd3 nv-legend" transform="translate(0,20)">
+                    <g transform="translate(25.630859375,20)">
+                        <g class="nv-series" transform="translate(0,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(31, 119, 180); fill-opacity: 1; stroke: rgb(31, 119, 180);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                TotalSpend
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(153.400390625,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(174, 199, 232); fill-opacity: 1; stroke: rgb(174, 199, 232);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                FoodSpend
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(252.12109375,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(255, 127, 14); fill-opacity: 1; stroke: rgb(255, 127, 14);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                In diesem Jahr einge...
+                            </text>
+                            <title>
+                                In diesem Jahr eingekaufter Fisch
+                            </title>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(405.521484375,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(255, 187, 120); fill-opacity: 1; stroke: rgb(255, 187, 120);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                In diesem Jahr einge...
+                            </text>
+                            <title>
+                                In diesem Jahr eingekauftes Fleisch
+                            </title>
+                        </g>
+                        <g class="nv-series" transform="translate(558.921875,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(44, 160, 44); fill-opacity: 1; stroke: rgb(44, 160, 44);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                In diesem Jahr einge...
+                            </text>
+                            <title>
+                                In diesem Jahr eingekaufte Frucht
+                            </title>
+                        </g>
+                        <g class="nv-series" transform="translate(0,25)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(152, 223, 138); fill-opacity: 1; stroke: rgb(152, 223, 138);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                In diesem Jahr einge...
+                            </text>
+                            <title>
+                                In diesem Jahr eingekaufte Süßigkeiten
+                            </title>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(153.400390625,25)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(214, 39, 40); fill-opacity: 1; stroke: rgb(214, 39, 40);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                LuxusSpend
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(252.12109375,25)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(255, 152, 150); fill-opacity: 1; stroke: rgb(255, 152, 150);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                In diesem Jahr einge...
+                            </text>
+                            <title>
+                                In diesem Jahr eingekaufter Wein
+                            </title>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(405.521484375,25)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(148, 103, 189); fill-opacity: 1; stroke: rgb(148, 103, 189);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                In diesem Jahr einge...
+                            </text>
+                            <title>
+                                In diesem Jahr eingekauftes Gold
+                            </title>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(558.921875,25)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(197, 176, 213); fill-opacity: 1; stroke: rgb(197, 176, 213);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                TotalPurchases
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(0,45)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(140, 86, 75); fill-opacity: 1; stroke: rgb(140, 86, 75);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                Single
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(153.400390625,45)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(196, 156, 148); fill-opacity: 1; stroke: rgb(196, 156, 148);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                Together
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(252.12109375,45)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(227, 119, 194); fill-opacity: 1; stroke: rgb(227, 119, 194);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                Married
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(405.521484375,45)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(247, 182, 210); fill-opacity: 1; stroke: rgb(247, 182, 210);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                Divorced
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(558.921875,45)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(127, 127, 127); fill-opacity: 1; stroke: rgb(127, 127, 127);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                Widow
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(0,65)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(199, 199, 199); fill-opacity: 1; stroke: rgb(199, 199, 199);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                Alone
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(153.400390625,65)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(188, 189, 34); fill-opacity: 1; stroke: rgb(188, 189, 34);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                Absurd
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(252.12109375,65)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(219, 219, 141); fill-opacity: 1; stroke: rgb(219, 219, 141);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                YOLO
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(405.521484375,65)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(23, 190, 207); fill-opacity: 1; stroke: rgb(23, 190, 207);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                Graduation
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(558.921875,65)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(158, 218, 229); fill-opacity: 1; stroke: rgb(158, 218, 229);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                PhD
+                            </text>
+                        </g>
+                        <g class="nv-series" transform="translate(0,85)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(31, 119, 180); fill-opacity: 1; stroke: rgb(31, 119, 180);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                Master
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(153.400390625,85)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(174, 199, 232); fill-opacity: 1; stroke: rgb(174, 199, 232);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                Basic
+                            </text>
+                        </g>
+                        <g class="nv-series"
+                           transform="translate(252.12109375,85)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(255, 127, 14); fill-opacity: 1; stroke: rgb(255, 127, 14);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                2n Cycle
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-controlsWrap"/>
+            <g class="nv-interactive"/>
+        </g>
+    </g>
+</svg>
